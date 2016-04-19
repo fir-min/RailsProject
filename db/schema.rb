@@ -27,6 +27,30 @@ ActiveRecord::Schema.define(version: 20160419194204) do
     t.string  "name"
     t.integer "restaurant_id"
   end
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 20160419052004) do
+
+  create_table "authenticates", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "provider"
+    t.string   "uid"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "image_url"
+    t.decimal  "price"
+    t.string   "category"
+    t.string   "subcategory"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+=======
+ActiveRecord::Schema.define(version: 20160412032249) do
+>>>>>>> origin/master
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
