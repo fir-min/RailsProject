@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   get 'sessions/create'
 
   get 'sessions/destroy'
@@ -76,4 +77,10 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+=======
+  resource :charges
+  devise_for :users, controllers: {omniauth_callbacks: "omniauth_callbacks"}
+  get '/users/auth/twitter/callback', to: 'omniauth_callbacks#twitter'
+  root 'home#home'
+>>>>>>> origin/master
 end

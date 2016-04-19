@@ -6,15 +6,23 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` on Rails 4+ applications as its `secret_key`
   # by default. You can change it below and use your own secret key.
+<<<<<<< HEAD
   # config.secret_key = '70a67f8c3fde4178da65db038223ff55c17858b128169fd57eaa46781435a559b20f85f80867ffa438e15753daba002922593327538f6c6d72542e17186417b5'
+=======
+  # config.secret_key = 'aa7dabef20c6f56dc11a124666000783927de96b77b8aafa3612af16d75bf8d93370525c96449e2a245176cc67cbb215c1a6722c19377fd37d9d46cd58eb7742'
+>>>>>>> origin/master
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
+<<<<<<< HEAD
   #require 'omniauth-facebook'
   #config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
   #config.omniauth :facebook, ENV['927829720670625'], ENV['6458f31dc03b5788f710f593d6b44282']
+=======
+  config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
+>>>>>>> origin/master
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
@@ -23,6 +31,7 @@ Devise.setup do |config|
   # Load and configure the ORM. Supports :active_record (default) and
   # :mongoid (bson_ext recommended) by default. Other ORMs may be
   # available as additional gems.
+<<<<<<< HEAD
   config.mailer_sender = 'mailer@example.com'
 
   require 'devise/orm/active_record'
@@ -35,6 +44,8 @@ Devise.setup do |config|
   config.password_length = 8..128
   config.reset_password_within = 6.hours
   config.sign_out_via = :delete
+=======
+>>>>>>> origin/master
   require 'devise/orm/active_record'
 
   # ==> Configuration for any authentication mechanism
@@ -113,7 +124,11 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
+<<<<<<< HEAD
   # config.pepper = 'a63aa7aafb398481a1b5c1a556fc3f7c404a92e5d569f330cd4e7133329619c0c528e0cfd7de0d4149b291179f5f99e06b58b29fc1d127a8a886c363029b3558'
+=======
+  # config.pepper = '08a4908b74acdecc174c2df808bfe8dbf155079e939319839b9082280b49ec48cd17878ef7b72be2c714ba8dc7a0fd822f64433092888e4f2beac090cf404500'
+>>>>>>> origin/master
 
   # Send a notification email when the user's password is changed
   # config.send_password_change_notification = false
@@ -252,7 +267,11 @@ Devise.setup do |config|
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
+<<<<<<< HEAD
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
+=======
+  config.omniauth :twitter, ENV["TWITTER_CONSUMER_KEY"], ENV["TWITTER_CONSUMER_SECRET"]
+>>>>>>> origin/master
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
