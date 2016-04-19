@@ -1,4 +1,27 @@
 Rails.application.routes.draw do
+  get 'sessions/create'
+
+  get 'sessions/destroy'
+
+  get 'home/show'
+
+  #get '/auth/:provider/callback' => 'authenticates#create'
+
+      devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}, controllers: {omniauth_callbacks: "omniauth_callbacks"}
+      resources :authenticates
+  get '/cart' => 'cart#index'
+  get '/cart/clear' => 'cart#clearCart'
+  get '/cart/:id' => 'cart#add'
+
+  resources :products
+  root 'page#home'
+
+  get 'page/about'
+
+  get 'page/faqs'
+
+  get 'page/contact'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
